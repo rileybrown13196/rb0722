@@ -1,0 +1,64 @@
+CREATE SCHEMA `toolrental';
+
+CREATE TABLE `toolrental`.`tools` (
+  `id_tools` INT NOT NULL,
+  `tool_code` VARCHAR(45) NULL,
+  `tool_type` VARCHAR(45) NULL,
+  `brand` VARCHAR(45) NULL,
+  `daily_rate` DOUBLE(40,2) NULL,
+  `weekday_charge` VARCHAR(45) NULL,
+  `weekend_charge` VARCHAR(45) NULL,
+  `holiday_charge` VARCHAR(45) NULL,
+  PRIMARY KEY (`id_tools`));
+
+--Insert information for CHNS
+INSERT INTO `toolrental`.`tools`
+(`id_tools`,
+`tool_code`,
+`tool_type`,
+`brand`,
+`daily_rate`,
+`weekday_charge`,
+`weekend_charge`,
+`holiday_charge`)
+VALUES
+('1', 'CHNS', 'Chainsaw', 'Stihl', 1.49, 'Yes', 'No', 'Yes');
+
+--Insert information for LADW
+INSERT INTO `toolrental`.`tools`
+(`id_tools`,
+`tool_code`,
+`tool_type`,
+`brand`,
+`daily_rate`,
+`weekday_charge`,
+`weekend_charge`,
+`holiday_charge`)
+VALUES
+('2', 'LADW', 'Ladder', 'Werner', 1.99, 'Yes', 'Yes', 'No');
+
+--Insert information for JAKD
+INSERT INTO `toolrental`.`tools`
+(`id_tools`,
+`tool_code`,
+`tool_type`,
+`brand`,
+`daily_rate`,
+`weekday_charge`,
+`weekend_charge`,
+`holiday_charge`)
+VALUES
+('3', 'JAKD', 'Jackhammer', 'DeWalt', 2.99, 'Yes', 'No', 'No');
+
+--Insert information for JAKR
+INSERT INTO `toolrental`.`tools`
+(`id_tools`,
+`tool_code`,
+`tool_type`,
+`brand`,
+`daily_rate`,
+`weekday_charge`,
+`weekend_charge`,
+`holiday_charge`)
+VALUES
+('4', 'JAKR', 'Jackhammer', 'Ridgid', 2.99, 'Yes', 'No', 'No');
